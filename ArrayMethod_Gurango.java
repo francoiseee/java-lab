@@ -1,7 +1,5 @@
 import java.util.*;
-
-class ArrayMethod_Gurango{
-
+public class coisey {
     static Scanner input = new Scanner(System.in);
     public static void main(String[] args) {
         int [] arr = new int [10];
@@ -56,18 +54,24 @@ class ArrayMethod_Gurango{
                 }
             }
 
-        static void lima(int [] arr){
-            int sum = 0; 
-            double ave = ave + arr / sum;
+        static void lima(int[] arr) {
+            int sum = 0;
             for (int i = 0; i < arr.length; i++) {
-                sum = sum + arr[i]; 
-                if (arr [i] > ave){
+                sum = sum + arr[i];
+            }
+            double ave = (double) sum / arr.length; // Calculate the average
+
+            System.out.println("Values higher than the average " + ave + ":");
+            for (int i = 0; i < arr.length; i++) {
+                if (arr[i] > ave) {
                     System.out.println(arr[i]);
                 }
             }
-            System.out.print("Values higher than the average "+ (ave) );
-            }
+}
+
 }
        
+
+
 
 
